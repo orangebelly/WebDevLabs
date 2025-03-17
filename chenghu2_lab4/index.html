@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Your name professional website">
+    <title>Your name</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./static/script.js" defer></script>
+</head>
+
+
+<body style="font-family: Arial" onload="addYear()">
+    <header style="color:blue; background:lightblue">
+    
+    <h1 id="webname"">Scarlett Huang</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="views/cv.html">CV</a></li>
+            <li><a href="views/contact.html">Contact me</a></li>
+            <li><a href="views/fun.html">For fun</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <div main>
+        <h2 id="greeting">Home</h2>
+        <p>Hi, my name is Scarlett.</p>
+
+        <!-- Short Bio -->
+        <p id="shortBio">I am a sophomore studying Information Systems and Computer Science at CMU...</p>
+
+        <!-- Full Bio (Hidden Initially) -->
+        <p id="fullBio" style="display: none;">
+            I am passionate about technology, theoretical computer science, and web development. 
+            I love exploring programming, AI research, and data analysis while staying engaged in various extracurriculars at CMU.
+            In my free time, I enjoy music, badminton, and gaming!
+        </p>
+
+        <!-- Buttons -->
+        <button id="readMore">Read More</button>
+        <button id="readLess" style="display: none;">Read Less</button>
+
+        <img src="static/1.jpg" alt="Me" style="max-width: 50%; display: block;
+        margin-left: auto;
+        margin-right: auto;" >
+        
+    </div>
+
+    <footer>
+        <p id="copyYear"> </p>
+        <p> Scarlett Huang 67250</p>
+    </footer>
+</body>
+</html>
