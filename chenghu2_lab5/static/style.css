@@ -11,6 +11,10 @@
     background-color: #92ad70;
 }
 
+.funIMG{
+    border-radius: 100%s
+}
+
 nav a {
     text-decoration: none;
     color: aquamarine;
@@ -35,9 +39,9 @@ form * {
     text-align: center;
 }
 
-#funList {
+/* #funList {
     display: none;
-}
+} */
 
 #showButton {
     background-color: lightblue;
@@ -68,3 +72,47 @@ form * {
     display: block;
     margin-top: 5px;
 }
+
+.container {
+    border-radius: 10%;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #f0f8ff;
+    max-width: 400px;
+}
+
+/* Style for the Get Advice button */
+.container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #45a049;
+}
+
+#mainLayout {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    justify-content: center; 
+    gap: 30px;           
+    padding: 20px;
+}
+
+#mainLayout > div {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+

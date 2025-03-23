@@ -27,40 +27,57 @@
     </nav>
     </header>
 
-    <div main>
-        <h2>Contact Me</h2>
-
-        <form id="contactForm" action="/submit" method="POST">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
-            <small id="nameError" class="error-message"></small><br>
-        
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
-            <small id="emailError" class="error-message"></small><br>
-        
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" placeholder="Enter your message" required></textarea><br>
-            <small id="messageError" class="error-message"></small><br>
-        
-            <input type="submit" value="Submit">
-        </form>
-        
-
-        <table style="color:rgb(15, 15, 45); background:beige; text-align: center; 
-        border-collapse: collapse; margin: 0 auto; width: 60%;">
-        <tr>
-        <th style="border: 2px solid black; padding: 10px;">Name</th>
-        <th style="border: 2px solid black; padding: 10px;">Email</th>
-        <th style="border: 2px solid black; padding: 10px;">Phone</th>
-    </tr>
-        <tr>
-        <td style="border: 2px solid black; padding: 10px;">Scarlett Huang</td>
-        <td style="border: 2px solid black; padding: 10px;">chenghu2@andrew.cmu.edu</td>
-        <td style="border: 2px solid black; padding: 10px;">412-600-6920</td>
-    </tr>
-        </table>
+    <div id="mainLayout">
+        <!-- item1: Google Maps -->
+        <div id="item1">
+            <h2>Find Me</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.473529158194!2d-79.94283548423028!3d40.444362479360444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f21c3277f20f%3A0x7e5ed9c7b91b3f01!2sCarnegie%20Mellon%20University!5e0!3m2!1sen!2sus!4v1710806306471!5m2!1sen!2sus" 
+                width="600" 
+                height="450" 
+                style="border:0; border-radius: 10px; display: block; margin: 0 auto;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    
+        <!-- item2: Contact form + table -->
+        <div id="item2">
+            <h2>Contact Me</h2>
+    
+            <form id="contactForm" action="/submit" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+                <small id="nameError" class="error-message"></small><br>
+    
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+                <small id="emailError" class="error-message"></small><br>
+    
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea><br>
+                <small id="messageError" class="error-message"></small><br>
+    
+                <input type="submit" value="Submit">
+            </form>
+    
+            <table style="color:rgb(15, 15, 45); background:beige; text-align: center; 
+            border-collapse: collapse; margin: 0 auto; width: 60%;">
+                <tr>
+                    <th style="border: 2px solid black; padding: 10px;">Name</th>
+                    <th style="border: 2px solid black; padding: 10px;">Email</th>
+                    <th style="border: 2px solid black; padding: 10px;">Phone</th>
+                </tr>
+                <tr>
+                    <td style="border: 2px solid black; padding: 10px;">Scarlett Huang</td>
+                    <td style="border: 2px solid black; padding: 10px;">chenghu2@andrew.cmu.edu</td>
+                    <td style="border: 2px solid black; padding: 10px;">412-600-6920</td>
+                </tr>
+            </table>
+        </div>
     </div>
+    
 
 
     <footer>
